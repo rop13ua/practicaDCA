@@ -52,7 +52,7 @@ function chequeaJWT(pet, resp, next) {
       next()
   }
   else {
-      resp.status(403);
+      res.status(403);
       resp.send({status:403, message: "Bad Request: 403 Forbbiden"});
 
   }
