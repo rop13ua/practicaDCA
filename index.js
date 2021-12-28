@@ -73,4 +73,5 @@ function getTokenFromAuthHeader(pet) {
 
 var listener = app.listen(process.env.PORT||3000, () => {
   console.log(`Servidor en el puerto ${listener.address().port}`);
+  console.log('Hola a todos!')
 });
