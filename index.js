@@ -22,7 +22,8 @@ app.post('/packages4you/login', function(pet, resp){
       login: result[0].email,
       exp: moment().add(7, 'days').valueOf()
     }
-    var token = jwt.encode(payload, secret)    
+    var token = jwt.encode(payload, secret)   
+    resp.send(200); 
     resp.send({message:"OK", token:token})
   }
   else{
