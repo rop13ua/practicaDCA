@@ -19,7 +19,7 @@ app.post('/prueba/login', function(pet, resp){
  
   if(loginBuscado == loginCorrecto && passwordBuscado == contrasenaCorrecta) {
     var payload = {
-      login: result[0].email,
+      login: loginBuscado,
       exp: moment().add(7, 'days').valueOf()
     }
     var token = jwt.encode(payload, secret)   
