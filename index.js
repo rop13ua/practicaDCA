@@ -13,7 +13,7 @@ var secret = '123456'
 var loginCorrecto= 'raquel'
 var contrasenaCorrecta='123'
 
-app.post('/packages4you/login', function(pet, resp){
+app.post('/prueba/login', function(pet, resp){
   var loginBuscado = pet.body.login
   var passwordBuscado = pet.body.password
  
